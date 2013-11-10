@@ -1,0 +1,56 @@
+This directory contains a prepatched cross-compiler and toolchain for
+use with OS/161 and/or System/161.
+
+This consists of the following files:
+
+cs161-binutils-1.5.tgz		Linker/assembler/tools.
+cs161-gcc-1.5.tgz		C compiler.
+cs161-gdb-1.5.tgz		Debugger.
+
+These tools are suitable for use with System/161 1.14 and up, and
+OS/161 1.10 and up. (Older versions may require the older toolchains
+found in the "old" directory.)
+
+They are based on the following GNU releases:
+
+   binutils:	binutils-2.17
+   gcc:		gcc-4.1.2
+   gdb:		gdb-6.6
+
+They have been repackaged for easy installation and use by our
+students.
+
+Note that you must install binutils before gcc.
+
+
+Patches
+-------
+
+Binutils is unchanged.
+
+gcc has a small patch to provide STABS line number info for assembler
+source files.
+
+gdb has two patches, which together allow remote debugging over
+AF_UNIX sockets, which allows it to talk to System/161.
+
+The patches alone may be fetched from the "patches" directory. You
+don't need these if you download the whole archives.
+
+
+Platforms/support
+-----------------
+
+The following platforms are believed to work. Those where it has been
+explicitly tested so far are marked with an asterisk.
+
+	(*) i386-netbsd
+	    i386-freebsd
+	    i386-openbsd
+	    i386-linux
+	    alpha-osf1
+	    sparc-solaris
+	    powerpc-darwin (MacOS X)
+
+Theoretically, any other platform the FSF tools support ought to work.
+Positive or negative reports (or patches) are welcome.

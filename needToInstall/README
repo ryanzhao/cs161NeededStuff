@@ -1,0 +1,45 @@
+This directory contains the following files:
+
+os161-1.11.tar.gz		Current (September 2005) release of OS/161
+system161-1.14.tar.gz		Current (June 2008) release of System/161
+
+Older versions can be found in the directory "old".
+
+The directory "ports" contains other software hacked up to run on OS/161
+that's not part of the OS distribution itself.
+
+If you are using:
+
+   OS/161 1.09		there is no pressing reason to update to 1.11
+   OS/161 1.10		there is no pressing reason to update to 1.11
+
+   System/161 1.1	update when reasonably convenient to at least 1.12
+   System/161 1.11	update when reasonably convenient to at least 1.12
+   System/161 1.12	there is no pressing reason to update to 1.13
+   System/161 1.13	update to use toolchain version 1.5
+
+
+Change highlights from OS/161 1.09 to 1.10:
+   Support for gcc 3.x (toolchain version 1.4).
+   Support for hosting on Solaris.
+
+Change highlights from OS/161 1.10 to 1.11:
+   Support for gcc 4.x.
+   Some minor bug fixes.
+
+
+Change highlights from System/161 1.1 to 1.11:
+   Support for talking to gdb 5.x and 6.x (toolchain version 1.4).
+   Support for Solaris.
+
+Change highlights from System/161 1.11 to 1.12:
+   Fix exception-related bug in machine simulator. (Important.)
+   Fix configure script bug affecting Linux.
+   Support for gcc 3.x.
+
+Change highlights from System/161 1.12 to 1.13:
+   Support for gcc 4.x.
+
+Change highlights from System/161 1.13 to 1.14:
+   Support for talking to gdb 6.6 (toolchain version 1.5).
+   Fix a build problem on very recent versions of NetBSD.
